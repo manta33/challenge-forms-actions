@@ -6,7 +6,6 @@ export default function Home() {
   async function handleForm(data: FormData) {
     "use server";
     await new Promise((resolve) => setTimeout(resolve, 5000));
-    redirect("/");
   }
 
   return (
