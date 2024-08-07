@@ -41,7 +41,7 @@ export default function Home() {
             type="email"
             placeholder="Email"
             required
-            errors={[]}
+            errors={state?.fieldErrors.email}
           />
         </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
             type="text"
             placeholder="Username"
             required
-            errors={[]}
+            errors={state?.fieldErrors.username}
           />
         </div>
 
@@ -85,7 +85,7 @@ export default function Home() {
             type="password"
             placeholder="Password"
             required
-            errors={state?.errors ?? []}
+            errors={state?.fieldErrors.password}
           />
         </div>
 
