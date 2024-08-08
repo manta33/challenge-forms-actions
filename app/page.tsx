@@ -5,6 +5,7 @@ import FormInput from "@/components/form-input";
 import { redirect } from "next/navigation";
 import { useFormState } from "react-dom";
 import { handleForm } from "./action";
+import "@/lib/db";
 
 export default function Home() {
   const [state, action] = useFormState(handleForm, null);
